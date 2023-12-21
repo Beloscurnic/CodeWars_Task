@@ -14,7 +14,7 @@ namespace CodeWars_Task
 {
     public class TwoToOne
     {
-        public static string Longest(string s1, string s2) => new string (s1.ToCharArray().Union(s2.ToCharArray()).Distinct().OrderBy(x => x).ToArray());
+        public static string Longest(string s1, string s2) => new string (s1.Union(s2).Distinct().OrderBy(x => x).ToArray());
         
     }
 
